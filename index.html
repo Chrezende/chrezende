@@ -169,7 +169,43 @@
                 <i class="fab fa-discord fa-fw"></i>
                   Discord: Chrezende#5904
                 </a>
-            <p>Ou através do meu email: <a href="mailto:c.h.rezende@hotmail.com">c.h.rezende@hotmail.com</a></p>
+            <p>Ou envie um email usando o formulário abaixo: <a href="mailto:c.h.rezende@hotmail.com">c.h.rezende@hotmail.com</a></p>
+
+            <h3>Send us a Message</h3>
+            <form name="sentMessage" id="contactForm" novalidate>
+              <div class="control-group form-group">
+                <div class="controls">
+                  <label>Nome completo:</label>
+                  <input type="text" class="form-control" id="name" required data-validation-required-message="Insira o seu nome.">
+                  <p class="help-block"></p>
+                </div>
+              </div>
+              <div class="control-group form-group">
+                <div class="controls">
+                  <label>Telefone:</label>
+                  <input type="tel" class="form-control" id="phone" required data-validation-required-message="Insira um telefone para contato.">
+                </div>
+              </div>
+              <div class="control-group form-group">
+                <div class="controls">
+                  <label>Email:</label>
+                  <input type="email" class="form-control" id="email" required data-validation-required-message="Insira um email para contato.">
+                </div>
+              </div>
+              <div class="control-group form-group">
+                <div class="controls">
+                  <label>Mensagem:</label>
+                  <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Deixe sua mensagem." maxlength="999" style="resize:none"></textarea>
+                </div>
+              </div>
+              <div id="success"></div>
+              <!-- For success/fail messages -->
+              <button type="submit" class="btn btn-primary" id="sendMessageButton">ENVIAR</button>
+            </form>
+            <div class="col-lg-8 mb-4">
+          
+              <!-- Formulário de contato -->
+        
           </div>
         </div>
       </div>
@@ -255,6 +291,11 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
